@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Market Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Binance Market Data</h1>
+    <div id="controls">
+        <select id="coinSelect">
+            <option value="ethusdt">ETH/USDT</option>
+            <option value="bnbusdt">BNB/USDT</option>
+            <option value="dotusdt">DOT/USDT</option>
+        </select>
+        <select id="intervalSelect">
+            <option value="1m">1 minute</option>
+            <option value="3m">3 minutes</option>
+            <option value="5m">5 minutes</option>
+            <option value="15m">1 minutes</option>
+        </select>
+    </div>
+    <div id="chartContainer">
+        <canvas id="chart"></canvas>
+    </div>
+    <div id="status"></div>
+    <script src="script.js"></script>
+</body>
+</html>
